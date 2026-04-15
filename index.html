@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Brew | Coffee Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="home">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Velvet Brew</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#cart" class="cart-icon" aria-label="Go to cart">
+        Cart <span id="cartCount">0</span>
+      </a>
+    </nav>
+
+    <section class="hero container reveal">
+      <p class="hero-kicker">Freshly brewed every day</p>
+      <h1>Awaken Your Senses with Velvet Brew</h1>
+      <p class="hero-text">Savor artisan coffee made with premium beans, rich aroma, and smooth taste crafted to elevate every sip.</p>
+      <a href="#menu" class="btn btn-primary">Explore Menu</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="section about" id="about">
+      <div class="container about-grid reveal">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80" alt="Coffee being poured into a cup">
+        <div class="about-content">
+          <h2>About Velvet Brew</h2>
+          <p>Velvet Brew is where cozy ambiance meets handcrafted coffee. We roast carefully sourced beans and serve each cup with precision, warmth, and love for the perfect coffee moment.</p>
+          <p>Whether you are here for a quick espresso or a relaxed mocha break, we make every visit comforting and memorable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu" id="menu">
+      <div class="container reveal">
+        <div class="section-heading">
+          <h2>Our Menu</h2>
+          <p>Choose your favorite and add it to the cart.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=900&q=80" alt="Espresso">
+            <h3>Espresso</h3>
+            <p class="price">₹199</p>
+            <button class="btn add-to-cart" data-id="espresso" data-name="Espresso" data-price="199">Add to Cart</button>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=900&q=80" alt="Latte">
+            <h3>Latte</h3>
+            <p class="price">₹249</p>
+            <button class="btn add-to-cart" data-id="latte" data-name="Latte" data-price="249">Add to Cart</button>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=900&q=80" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p class="price">₹229</p>
+            <button class="btn add-to-cart" data-id="cappuccino" data-name="Cappuccino" data-price="229">Add to Cart</button>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80" alt="Mocha">
+            <h3>Mocha</h3>
+            <p class="price">₹279</p>
+            <button class="btn add-to-cart" data-id="mocha" data-name="Mocha" data-price="279">Add to Cart</button>
+                      </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?auto=format&fit=crop&w=900&q=80" alt="Caramel Latte">
+            <h3>Caramel Latte</h3>
+            <p class="price">₹289</p>
+            <button class="btn add-to-cart" data-id="caramel-latte" data-name="Caramel Latte" data-price="289">Add to Cart</button>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=900&q=80" alt="Hazelnut Cappuccino">
+            <h3>Hazelnut Cappuccino</h3>
+            <p class="price">₹299</p>
+            <button class="btn add-to-cart" data-id="hazelnut-cappuccino" data-name="Hazelnut Cappuccino" data-price="299">Add to Cart</button>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Vanilla Latte">
+            <h3>Vanilla Latte</h3>
+            <p class="price">₹289</p>
+            <button class="btn add-to-cart" data-id="vanilla-latte" data-name="Vanilla Latte" data-price="289">Add to Cart</button>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Affogato">
+            <h3>Affogato</h3>
+            <p class="price">₹319</p>
+            <button class="btn add-to-cart" data-id="affogato" data-name="Affogato" data-price="319">Add to Cart</button>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1515442261605-65987783cb6a?auto=format&fit=crop&w=900&q=80" alt="Irish Coffee">
+            <h3>Irish Coffee</h3>
+            <p class="price">₹339</p>
+            <button class="btn add-to-cart" data-id="irish-coffee" data-name="Irish Coffee" data-price="339">Add to Cart</button>
+          </article>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cart" id="cart">
+      <div class="container reveal">
+        <div class="section-heading">
+          <h2>Your Cart</h2>
+          <p>Review your selected coffees and update quantities.</p>
+        </div>
+        <div class="cart-wrapper">
+          <div id="cartItems" class="cart-items"></div>
+          <aside class="cart-summary">
+            <h3>Cart Summary</h3>
+            <div class="summary-line">
+              <span>Subtotal</span>
+              <strong id="subtotal">₹0</strong>
+            </div>
+            <div class="summary-line total">
+              <span>Total</span>
+              <strong id="totalPrice">₹0</strong>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">Checkout</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container reveal">
+        <div class="section-heading">
+          <h2>Contact Us</h2>
+          <p>Visit us or drop a message for reservations.</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Velvet Brew. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
